@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+
+:root {
+    --azul_fuerte: hsla(220, 74%, 27%, 1);
+    --background: hsla(54, 100%, 73%, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+main {
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: var(--azul_fuerte);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+header p {
+    color: white;
+}
+
+p {
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--azul_fuerte);
+    color: white;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 200;
+}
+
+address {
+    text-align: center;
+}
+
+.nav-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-image:hover {
+    transform: scale(1.2);
+}
+
+header nav .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding-left: 40px;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+header .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header button {
+    background-color: hsl(100, 97%, 96%);
+    color: darkorchid;
+    border-radius: 10px;
+    border: none;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+header button:hover {
+    transform: scale(1.2);
+}
+
+.main-img {
+    margin: 10px auto;
+    display: block;
+    padding-bottom: 10px;
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.main-img:hover {
+    transform: scale(2.0);
+}
+
+/* Barra de desplazamiento */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsla(116, 53%, 60%, 0.30);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsla(9, 100%, 69%, 1);
+    border-radius: 20px;
+}
